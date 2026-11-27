@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(tidyr)
 library(dplyr)
+air_travel <- read.csv("air_travel.csv")
+airports <- read.csv("airports.csv")
 ```
 
 ```{r}
@@ -55,4 +57,5 @@ rownames(D) <- wide_X$Origin
 diag(D) <- 0
 
 X_symmetric
+D
 ```
